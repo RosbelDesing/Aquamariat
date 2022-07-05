@@ -1,0 +1,57 @@
+*::before, *::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+*::before, *::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
+
+/* --Establecer estilos del Body-- */
+
+body {
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.container-all {
+    width:100%;
+    max-width:1000px;
+    margin:auto;
+    padding:10px;
+    margin-top:20px;
+    border-top:6px solid #fff;
+}
+
+/* --Le metes float a la imagen  ya-- */
+.imagen-blog {
+    width:300px;
+    float:left;
+    margin-right: 20px;
+}
+
+.titulo-blog{
+    color:#fff;
+    margin-bottom: 40px;
+    display:flex;
+}
+
+.texto1{
+    color:#fff;
+    font-size:18px;
+    text-align: justify;
+    font-weight: 300;
+}
+
+h3{
+    color:#fff;
+    font-weight: bold;
+    font-size:23px;
+}

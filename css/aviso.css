@@ -1,0 +1,50 @@
+*::before, *::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+*::before, *::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
+
+/* --Establecer estilos del Body-- */
+
+body {
+    background-color: #fff;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.aviso-legal{
+    padding:20px;
+    padding-top:10px;
+}
+
+.title-aviso{
+    color:#000;
+    font-size:30px;
+    text-transform: uppercase;
+}
+
+.texto-legal {
+    color:#000;
+    font-size:20px;
+    text-align: justify;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.subtitulo{
+    font-size:25px;
+    padding-top:10px;
+}
+
+.lista-info{
+    font-size:20px;
+}

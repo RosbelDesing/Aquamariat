@@ -1,0 +1,318 @@
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+*::before, *::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
+
+/* --Establecer estilos del Body-- */
+
+body {
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+/* --Contenedor del logo y texto-- */
+.logo {
+    display:flex;
+    align-items: center;
+}
+/* --Texto:Aquamriart-- */
+span {
+    font-size:20px;
+    color:#fff;
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+/* --Tamaño de la imagen logotipo-- */
+.img-logo {
+    width:40px;
+    border-radius:50%;
+    border-color: #fff;
+    border-style: solid;
+}
+
+/* --Este es el segundo header que contiene el menu de navegacion-- */
+
+.header {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px;
+    line-height: 10px;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+}
+
+/* --Contenedor de las redes sociales en la parte sperior-- */
+.redes {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 10px;
+    padding-top:5px;
+}
+/* --Identifica a las redes sociales(imagenes)-- */
+.icon {
+    width:20px;
+    margin-right:16px;
+    margin-top:3px;
+    border-radius:10px;
+    cursor:pointer;
+}
+/* --Hover para agrandar iconos de las redes socailes-- */
+.icon:hover {
+    transform: scale(1.2);
+    transition: 0.6s;
+}
+/* --Seleccionar el texto del menu de navegacion(home ...y los demas)-- */
+.link {
+    display: flex;
+    color:#fff;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size:20px;
+    padding:5px;
+    text-transform: uppercase;
+    align-items: center;
+}
+/* --Hover para el menu de navegacion-- */
+.link:hover{
+    border-radius: 20px;
+    border-color:#fff;
+    border-style:solid;
+    border-width:0.8px;
+    transition: 0.5s;
+    opacity: 0.8;
+
+}
+/* --Contenedor de el texto y la imagen que aparece en la web inicial-- */
+.contenedor {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+}
+
+/* --Contenedor del Texto de bienvenida-- */
+.texto-central{
+    margin-right: 10px;
+    margin-left: 10px;
+    width:45%;
+    text-align: center;
+    padding-top:40px;
+    
+}
+/* --Texto de bienvenida-- */
+.welcome {
+    padding-top: 20%;
+    color:#fff;
+}
+
+
+/* --Imagen derecha-- */
+.foto-central{
+    margin-top:10px;
+    width:350px;
+    border-radius:30px;
+    border-color: #fff;
+    border-style:solid;
+}
+
+/* --Boton para activar el menu vista movil-- */
+.nav-toggle {
+    background:none;
+    width:50px;
+    padding:0 20px;
+    align-items: center;
+    justify-content: center;
+    display:none;
+    border-style: none;
+}
+
+/* --Menu version movil-- */
+.hamburguesa  {
+    width:30px;
+    cursor:pointer;
+}
+
+/* --Iconos que aparecen en los menus-- */
+.icono-menu{
+    width:30px;
+    margin-right: 4px;
+}
+
+/* --Haciendo responsive el Html Index-- */
+@media (max-width:800px) {
+
+    .header {
+        height: 60px;
+    }
+    .redes {
+        display:none;
+    }
+
+    .nav-toggle {
+        display:block;
+    }
+
+    .nav-menu {
+        display:flex;
+        flex-direction: column;
+        margin-right: 20px;
+        background: #41295a;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #2F0743, #41295a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        position:fixed;
+        left:0;
+        top:60px;
+        width:100%;
+        padding-top:30px;
+    
+        height: 100vh;
+        overflow-y:auto;
+
+        left:100%;
+        transition:left 0.5s;
+    }
+
+    .nav-menu-visible {
+        left:0;
+    }
+
+    .link {
+        padding:35px;
+        margin-left:50px;
+    }
+
+    .link:hover {
+        border-style:solid;
+        border-top:none;
+        border-right: none;
+        border-bottom: none;
+        border-radius:0;
+        border-width:5px;
+        background-color:#7816A2;
+    }
+
+    .icono-menu{
+        width:30px;
+        margin-right: 10px;
+    }
+
+    .img-logo {
+        display:none;
+    }
+
+    .texto-central{
+        width:100%;
+        padding-top:0px;
+    }
+    .welcome {
+        padding-top:5px;
+        color:#fff;
+    } 
+
+}
+
+@media (max-width:800px) {
+
+    .welcome {
+        padding-top:5px;
+        color:#fff;
+    } 
+}
+
+@media (max-width:280px){
+    .foto-central {
+       width:240px;
+    } 
+}
+
+
+/* --Footer-- */
+
+footer {
+    background-color:rgba(0, 0, 0, 0.507);
+    margin-top:20px;
+}
+
+/* --Contenedor general del footer-- */
+.footer-container{
+    display:flex;
+    justify-content:space-between;
+    padding:10px;
+    padding-right: 60px;
+    padding-left:60px;
+}
+
+/* --Titulo de cada columna-- */
+.c1-title,.c2-title,.c3-title{
+    color:#fff;
+    padding-bottom: 5px;
+ }
+
+ /* --Contenedor de cada columna-- */
+.columna1,.columna2,.columna3 { 
+    padding:10px;
+}
+
+/* --Informacion de cada columna-- */
+.terminos {
+     color:rgb(199, 196, 196);
+     padding-top:5px;
+     padding-bottom:5px;
+ }
+
+/* --Seleccionar el link de cada columna-- */
+.link-f {
+    text-decoration: none;
+}
+
+/* --Copyrigth parte final mas oscura-- */
+.copyrigth{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color:rgba(0, 0, 0, 0.473);
+    padding:5px;
+    color:#fff;
+}
+
+/* --Hacer responsive el footer-- */
+@media (max-width:800px) {
+    .footer-container{
+        flex-wrap:wrap;
+    }
+
+    
+}
+
+/* --Iconos de redes sociales en el footer-- */
+.red{
+    width:30px;
+}
+
+.red:hover{
+    transform: scale(1.05);
+    transition:0.5s;
+}
+
+/* --Efecto hover para la informacion en la culumna 2 y 3-- */
+
+.terminos:hover {
+    color:white;
+}
+
+

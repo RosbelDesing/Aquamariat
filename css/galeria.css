@@ -1,0 +1,94 @@
+*::before, *::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+*::before, *::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
+
+/* --Establecer estilos del Body-- */
+body {
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+/* --Titulo de la galeria-- */
+.gallery-title {
+    padding:15px;
+    text-align: center;
+    font-size: 25px;
+    color:#fff;
+}
+
+/* --Encabezado-texto-- */
+.section-encabezado{
+    color:#fff;
+    text-align: justify;
+    padding: 0 15px 10px 15px;
+}
+
+/* --Contenedor general de la galeria-- */
+.container-galeria-nft{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+/* --Contenedor de imagen y pie de figura-- */
+.container-bloque{
+    padding:20px;
+}
+
+/* --Imagen-- */
+.nft-imagen{
+    width:200px;
+    margin-bottom: 0;
+    border-color:#fff;
+    border-style:solid;
+    border-radius:10px 10px 0 0;
+    box-shadow:10px 0px 10px rgba(29, 27, 27, 0.541);
+}
+
+/* --Contenedor del pie de figura-- */
+.pie-fig{
+    background-color:rgb(72, 68, 75);
+    padding:8px 0 8px 0;
+    border-radius:0 0 10px 10px;
+    border-color:#fff;
+    border-style:solid;
+    box-shadow:10px 10px 10px rgba(29, 27, 27, 0.541);
+}
+
+/* --Texto del pie de figura-- */
+.pie{
+    color:#fff;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 4px;
+}
+
+/* --Efecto hover para figura y descripcion-- */
+.container-bloque:hover{
+    cursor:pointer;
+    transform:scale(1.02);
+}
+
+/* --Icono de las criptomonedas-- */
+.cryptos {
+    width:18px;
+}
+
+/* --Active para el contenedor de imagenes y descripcion-- */
+.container-bloque:active{
+    transform: scale(0.8);
+
+}
